@@ -39,6 +39,7 @@ public class Movement {
         return new MovementDelta(x, y, state, direction);
     }
 
+    /*
     public static MovementDelta Circle(final int currentX, final int currentY, ActorState state, final int r, final int delta) {
         int x = 0;
         int y = 0;
@@ -54,4 +55,6 @@ public class Movement {
 
         return new MovementDelta(x, y);
     }
+
+     */
 }
