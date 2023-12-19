@@ -6,7 +6,7 @@ public class DataGenerator {
     private static Random random = new Random();
     public static int[] generateData(int n) {
         int[] array = new int[n];
-        for(int i = 0; i < array.length; i++) {
+        for(int i = 0; i < n; i++) {
             array[i] = random.nextInt();
         }
         return array;
@@ -21,12 +21,12 @@ public class DataGenerator {
         return array;
     }
 
-    public static String printArray(int[] array) {
+    public static void printArray(int[] array) {
         String output = "";
         for(var i : array) {
-            output += String.format("{} ", i);
+            output += String.format("%s, ", i);
         }
 
-        return output;
+        System.out.println(output);
     }
 }
