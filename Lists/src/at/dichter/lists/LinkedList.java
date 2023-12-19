@@ -21,6 +21,13 @@ public class LinkedList<E> implements List<E> {
 
     @Override
     public void remove(int index) {
+        if(index == 0) {
+            this.first = first.next;
+            first.previous = null;
+            length--;
+            return;
+        }
+
         Node<E> node = this.getNode(index);
         if(node.previous != null) node.previous.next = node.next;
         if(node.next != null) node.next.previous = node.previous;

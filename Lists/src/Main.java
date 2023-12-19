@@ -3,7 +3,7 @@ import at.dichter.lists.List;
 public class Main {
     public static void main(String[] args) {
         List<String> list = new LinkedList<String>();
-        list.add("asdf");
+        list.add("aqweq");
         list.add("asdf");
         list.add("list");
         list.add("asdf");
